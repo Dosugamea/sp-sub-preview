@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sp-sub-[INSERT SERVER NAME HERE]"
+version = "0.1.0"
+description = "[INSERT SERVER DESCRIPTION] server for sp-api-v3"
+authors = ["Dosugamea <17107514+Dosugamea@users.noreply.github.com>"]
+license = "AGPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.78.0"
+uvicorn = "^0.18.2"
+gunicorn = "^20.1.0"
+python-multipart = "^0.0.5"
+dataclasses-json = "^0.5.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

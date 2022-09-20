@@ -1,0 +1,28 @@
+name: "✒ Lint yaml files with yamllint using reviewdog"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - develop
+    paths:
+      - "**.yml"
+      - "**.yaml"
+    paths-ignore:
+      - '.github/workflows/**'
+
+jobs:
+  yamllint:
+    name: "✒ lint yaml"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: yamllint
+        uses: reviewdog/action-yamllint@v1
+        with:
+          github_token: ${{ secrets.KIRARI_TOKEN }}
+          reporter: github-pr-review
+          yamllint_flags: '--config-file .github/workflows/config/yamllint.yml'
+          fail_on_error: true
