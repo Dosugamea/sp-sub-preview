@@ -1,11 +1,11 @@
-# sp-sub-[INSERT SERVER NAME HERE]
+# sp-sub-preview
 
 
 ![Python Version](https://img.shields.io/badge/python-v3.10.5-blue)
 ![License](https://img.shields.io/badge/license-AGPLv3%2B-green)
 
-[INSERT SERVER DESCRIPTION] server for [sp-api-v3](https://github.com/PurplePalette/sp-api-v3)
-This server meant micro service to [DO SOMETHING].
+sus chart preview server for [sp-api-v3](https://github.com/PurplePalette/sp-api-v3)
+This server meant micro service to make preview image from a sus file.
 
 ## Requirements
 
