@@ -12,6 +12,7 @@ uvicorn = "^0.18.2"
 gunicorn = "^20.1.0"
 python-multipart = "^0.0.5"
 dataclasses-json = "^0.5.7"
+svgwrite = "^1.4.3"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
